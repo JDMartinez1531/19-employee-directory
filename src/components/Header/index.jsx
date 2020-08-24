@@ -1,11 +1,12 @@
 import React from "react";
+import "./style.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Header = () => {
     return (
-        <Container>
+        <Container fluid className="header-container">
             <Row>
                 <Col data-test-id="header-title" className="title">
                 <h1>Employee Directory</h1>
