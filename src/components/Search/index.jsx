@@ -1,8 +1,13 @@
 import React from "react";
+import Form from "react-bootstrap/Form"
 
 const Search = () => {
     return (
-        <div>Search bar here</div>
+        <Form>
+            <Form.Control
+            type="text"
+            placeholder="Search" />
+        </Form>
     )
 }
 

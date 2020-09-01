@@ -8,5 +8,5 @@ it("should render with placeholder text", () => {
     const {getByPlaceholderText, baseElement} = render(<Search />);
 
     expect(baseElement).toBeInTheDocument();
-    // getByPlaceholderText("Search");
+    getByPlaceholderText("Search");
 })
