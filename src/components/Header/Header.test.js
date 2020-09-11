@@ -1,10 +1,10 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Header from ".";
 
 test("renders correct content", () => {
-    const { getByText } = render(<Header />);
+    render(<Header />);
 
-    getByText("Employee Directory");
-    getByText("Browse employees by name or use search bar to find employee info.")
+    screen.getByText("Employee Directory");
+    screen.getByText("Browse employees by name or use search bar to find employee info.")
 })
